@@ -29,7 +29,7 @@ A solução foi implementada com um Merge Sort modificado, utilizando a técnica
 
 ![Print da Resolução 315](imagens/315.png)
 
-### [732. Longest Balanced Substring I - Média](https://leetcode.com/problems/my-calendar-iii/description/) 
+### [732. My Calendar I - Média](https://leetcode.com/problems/my-calendar-iii/description/) 
 O exercício “My Calendar I” (LeetCode 729) pede para implementar uma agenda que receba intervalos [start, end) e permita aceitar apenas eventos que não se sobrepõem aos já registrados.
 A solução usa uma estrutura ordenada para armazenar os intervalos e, a cada novo evento, verifica se ele conflita com o intervalo imediatamente anterior ou posterior. Se não houver sobreposição, o evento é inserido; caso contrário, é rejeitado. Essa abordagem garante o controle eficiente dos intervalos sem interseções.
 
