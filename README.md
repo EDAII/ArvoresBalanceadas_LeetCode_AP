@@ -40,3 +40,7 @@ A questão pede para identificar o comprimento do maior substring "balanceado" d
 ![Print da Resolução 3713](imagens/3713.png)
 
 ## Vídeo de explicação das Questões:
+
+https://github.com/user-attachments/assets/073d57cb-69b4-4865-b571-150b138b6dc6
+
+
