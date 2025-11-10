@@ -30,14 +30,12 @@ A solução foi implementada com um Merge Sort modificado, utilizando a técnica
 ![Print da Resolução 315](imagens/315.png)
 
 ### [732. My Calendar III - Difícil](https://leetcode.com/problems/my-calendar-iii/description/) 
-O exercício “My Calendar III” (LeetCode 729) pede para implementar uma agenda que receba intervalos [start, end) e permita aceitar apenas eventos que não se sobrepõem aos já registrados.
-A solução usa uma estrutura ordenada para armazenar os intervalos e, a cada novo evento, verifica se ele conflita com o intervalo imediatamente anterior ou posterior. Se não houver sobreposição, o evento é inserido; caso contrário, é rejeitado. Essa abordagem garante o controle eficiente dos intervalos sem interseções.
+A questão pede uma estrutura capaz de registrar eventos e, após cada novo agendamento, informar quantos eventos estão simultaneamente sobrepostos em algum moment, o maior valor k de sobreposição. A solução faz isso usando a técnica de varredura por pontos: cada evento adiciona +1 no seu horário de início e -1 no seu horário de término. Depois, os horários registrados são ordenados e percorridos acumulando essas variações, o que permite identificar quantos eventos estão ativos em cada instante. O maior valor acumulado corresponde ao k-booking atual, que é retornado após cada chamada ao método book.
 
 ![Print da Resolução 732](imagens/732.png)
 
 ### [3713. Longest Balanced Substring I - Média](https://leetcode.com/problems/longest-balanced-substring-i/description/) 
-O exercício “Balanced Subsequence Sum” (LeetCode 3713) pede para encontrar a maior soma possível de uma subsequência que obedeça à condição nums[j] - nums[i] ≥ j - i entre elementos consecutivos.
-A solução observa que essa condição equivale a exigir que a subsequência seja não decrescente no valor nums[i] - i. Assim, agrupa-se os elementos pelo valor nums[i] - i, soma-se todos os nums[i] de cada grupo e escolhe-se o grupo com maior soma, obtendo a subsequência balanceada de soma máxima.
+A questão pede para identificar o comprimento do maior substring "balanceado" de uma string, ou seja, um trecho onde todos os caracteres distintos aparecem exatamente o mesmo número de vezes. Para resolver isso, percorri todos os substrings possíveis usando dois laços: um para definir o início e outro para expandir o final. Durante essa expansão, mantém-se um dicionário que registra a frequência de cada caractere no trecho atual. A cada atualização, as frequências são comparadas; se o menor e o maior valor forem iguais, o substring é balanceado e seu tamanho pode ser considerado para atualizar a resposta. Ao final, retorna-se o maior comprimento encontrado.
 
 ![Print da Resolução 3713](imagens/3713.png)
 
